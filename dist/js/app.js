@@ -1,7 +1,7 @@
 const menuBtn = document.querySelector('.menu-btn');
 const menu = document.querySelector('.menu');
 const menuNav = document.querySelector('.menu-nav');
-const menuBrand = document.querySelector('.nav-brand');
+const menuBrand = document.querySelector('.menu-brand');
 const navItems = document.querySelectorAll('.nav-item');
 
 // set initial state of menu

@@ -1,0 +1,59 @@
+// wide screens
+@include mediaXl {
+}
+
+// laptops and desktops
+@include mediaLg {
+}
+
+// tablets and small laptops
+@include mediaMd {
+  main {
+    align-items: center;
+    text-align: center;
+    overflow: hidden;
+
+    .lg-heading {
+        line-height: 1;
+        margin-bottom: 1rem;
+    }
+  }
+
+  ul.menu-nav, div.menu-brand {
+      float: none;
+      width: 100%;
+      min-height: 0;
+
+      &.show {
+          transform: translate3d(0, 0, 0);
+      }
+  }
+
+  .menu-nav {
+      height: 70vh;
+      transform: translate3d(-100%, 0, 0);
+      font-size: 20px;
+
+  }
+
+  .menu-brand {
+      height: 30vh;
+      transform: translate3d(100%, 0, 0);
+      font-size: 20px;
+
+  }
+
+  .portrait {
+      background-size: 50px;
+      width: 150px;
+      height: 150px;
+  }
+}
+
+// mobiles
+@include mediaSm {
+    main#main-menu h1 {
+        margin-top: 10vh;
+    }
+}
+
