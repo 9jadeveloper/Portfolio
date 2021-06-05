@@ -11,11 +11,14 @@
   main {
     align-items: center;
     text-align: center;
-    overflow: hidden;
 
     .lg-heading {
         line-height: 1;
         margin-bottom: 1rem;
+    }
+
+    &#main-menu {
+        overflow: hidden;
     }
   }
 
@@ -47,6 +50,16 @@
       background-size: 50px;
       width: 150px;
       height: 150px;
+  }
+
+  .main-about {
+      grid-template-areas: 
+      'bioimage'
+      'bio'
+      'job1'
+      'job2'
+      'job3';
+      grid-template-columns: 1fr;
   }
 }
 
