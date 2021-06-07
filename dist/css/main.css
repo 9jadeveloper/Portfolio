@@ -58,14 +58,14 @@
       background: url("../img/background.jpg");
       background-size: cover;
       border-radius: 50%;
-      border: 3px solid #eece1a; }
+      border: 3px solid #1acac1; }
   .menu .nav-item {
     transform: translate3d(600px, 0, 0);
     transition: all 0.5s ease-in; }
     .menu .nav-item.show {
       transform: translate3d(0, 0, 0); }
     .menu .nav-item.current > a {
-      color: #eece1a; }
+      color: #1acac1; }
   .menu .nav-link {
     display: inline-block;
     position: relative;
@@ -77,7 +77,7 @@
     text-decoration: none;
     transition: all 0.5s ease-in; }
     .menu .nav-link:hover {
-      color: #eece1a; }
+      color: #1acac1; }
 
 .nav-item:nth-child(1) {
   transition-delay: 0.2s; }
@@ -91,6 +91,53 @@
 .nav-item:nth-child(4) {
   transition-delay: 0.8s; }
 
+@media screen and (min-width: 1171px) {
+  .main-work {
+    grid-template-columns: repeat(4, 1fr); } }
+
+@media screen and (min-width: 769px) and (max-width: 1170px) {
+  .main-work {
+    grid-template-columns: repeat(3, 1fr); } }
+
+@media screen and (max-width: 768px) {
+  main {
+    align-items: center;
+    text-align: center; }
+    main .lg-heading {
+      line-height: 1;
+      margin-bottom: 1rem; }
+    main#main-menu {
+      overflow: hidden; }
+  ul.menu-nav, div.menu-brand {
+    float: none;
+    width: 100%;
+    min-height: 0; }
+    ul.menu-nav.show, div.menu-brand.show {
+      transform: translate3d(0, 0, 0); }
+  .menu-nav {
+    height: 70vh;
+    transform: translate3d(-100%, 0, 0);
+    font-size: 20px; }
+  .menu-brand {
+    height: 30vh;
+    transform: translate3d(100%, 0, 0);
+    font-size: 20px; }
+  .portrait {
+    background-size: 50px;
+    width: 150px;
+    height: 150px; }
+  .main-about {
+    grid-template-areas: 'bioimage' 'bio' 'job1' 'job2' 'job3';
+    grid-template-columns: 1fr; }
+  .main-work {
+    grid-template-columns: repeat(2, 1fr); } }
+
+@media screen and (max-width: 500px) {
+  main#main-menu h1 {
+    margin-top: 10vh; }
+  .main-work {
+    grid-template-columns: 1fr; } }
+
 * {
   box-sizing: border-box; }
 
@@ -102,7 +149,7 @@ body {
   line-height: 1.5;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; }
   body#bg-img {
-    background: url(../img/wallp.jpg);
+    background: url(/dist/img/wallp.jpg);
     background-attachment: fixed;
     background-size: cover; }
     body#bg-img:after {
@@ -135,7 +182,7 @@ header {
   width: 100%; }
 
 .text-secondary {
-  color: #eece1a; }
+  color: #1acac1; }
 
 main {
   padding: 4rem;
@@ -145,7 +192,7 @@ main {
     main .icons a {
       padding: 0.5em; }
       main .icons a:hover {
-        color: #eece1a;
+        color: #1acac1;
         transition: all 0.5s ease-in; }
   main#main-menu {
     overflow: hidden; }
@@ -163,7 +210,7 @@ main {
   width: 270px;
   margin: auto;
   border-radius: 50%;
-  border: #eece1a 3px solid; }
+  border: #1acac1 3px solid; }
 
 .bio {
   grid-area: bio;
@@ -181,7 +228,7 @@ main {
 .job {
   background: #515151;
   padding: 0.5rem;
-  border-bottom: #eece1a 4px solid; }
+  border-bottom: #1acac1 4px solid; }
 
 .main-work {
   display: grid;
@@ -192,7 +239,7 @@ main {
     border: 2px solid #fff; }
     .main-work img:hover {
       opacity: 0.5;
-      border-color: #eece1a;
+      border-color: #1acac1;
       transition: all 0.5s ease-in; }
 
 .boxes {
@@ -209,10 +256,34 @@ main {
     transition: all 0.5s ease-in; }
     .boxes div:hover {
       padding: 0.5rem 1.5rem;
-      background: #eece1a;
+      background: #1acac1;
       color: #000; }
       .boxes div:hover span {
         color: #000; }
+
+#main-footer {
+  text-align: center;
+  padding: 0.08rem;
+  background: #2b2b2b;
+  color: #fff;
+  height: 60px; }
+  #main-footer p {
+    margin-top: 0.1rem; }
+    #main-footer p a {
+      color: white;
+      font-size: 1rem;
+      transition: all 0.4s;
+      display: inline-block; }
+      #main-footer p a:hover, #main-footer p a:active {
+        color: #1acac1;
+        -webkit-box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+        box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15); }
+  #main-footer hr {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border: 0;
+    width: 50%;
+    border-top: 2px solid rgba(255, 255, 255, 0.1); }
 
 .btn, .btn-dark, .btn-light {
   display: block;
@@ -220,7 +291,7 @@ main {
   border: 0;
   margin-bottom: 0.3rem; }
   .btn:hover, .btn-dark:hover, .btn-light:hover {
-    background: #eece1a;
+    background: #1acac1;
     color: #000;
     transition: all 0.5s ease-in; }
 
@@ -231,13 +302,6 @@ main {
 .btn-light {
   background: #c4c4c4;
   color: #333; }
-
-#about-footer {
-  background: #2b2b2b;
-  text-align: center;
-  height: 60px;
-  padding: 1rem;
-  color: #fff; }
 
 @media screen and (min-width: 1171px) {
   .main-work {

@@ -3,6 +3,11 @@
 
 @import 'menu';
 
+@import 'mobile';
+
+
+ 
+
 
 * {
     box-sizing: border-box;
@@ -162,6 +167,42 @@ main {
     }
 }
 
+// footer
+
+#main-footer {
+    text-align: center;
+    padding:  0.08rem;
+    background: darken($color: $primary-color, $amount: 10);
+    color: set-text-color($primary-color);
+    height: 60px;
+
+   & p {
+        margin-top: 0.1rem;
+
+        a {
+      color: white;
+      font-size: 1rem;
+      transition: all 0.4s;
+      display: inline-block;
+
+      &:hover,
+      &:active {
+        color: $secondary-color;
+        -webkit-box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+        box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+      }
+    }
+    }
+
+    & hr {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border: 0;
+    width: 50%;
+    border-top: 2px solid rgba(255, 255, 255, 0.1);
+    }
+}
+
 // button styles
 .btn {
     display: block;
@@ -188,14 +229,7 @@ main {
     color: #333;
 }
 
-// footer
-#about-footer {
-    background: darken($color: $primary-color, $amount: 10);
-    text-align: center;
-    height: 60px;
-    padding: 1rem;
-    color: set-text-color($primary-color);
-}
+
 
 
 @import 'mobile';
