@@ -147,7 +147,7 @@ body {
   height: 100%;
   margin: 0;
   line-height: 1.5;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; }
+  font-family: 'Varela' sans-serif; }
   body#bg-img {
     background: url(/dist/img/wallp.jpg);
     background-attachment: fixed;
@@ -183,6 +183,21 @@ header {
 
 .text-secondary {
   color: #1acac1; }
+
+.know-btn {
+  display: inline-block;
+  background: #fff;
+  margin-bottom: 10px;
+  color: #000;
+  padding: 5px 10px;
+  border-radius: 5%;
+  text-decoration: none;
+  font-size: 1.1em;
+  font-weight: 300; }
+  .know-btn:hover {
+    background: #1acac1;
+    color: #fff;
+    transition: all 0.5s ease-in; }
 
 main {
   padding: 4rem;
@@ -302,50 +317,3 @@ main {
 .btn-light {
   background: #c4c4c4;
   color: #333; }
-
-@media screen and (min-width: 1171px) {
-  .main-work {
-    grid-template-columns: repeat(4, 1fr); } }
-
-@media screen and (min-width: 769px) and (max-width: 1170px) {
-  .main-work {
-    grid-template-columns: repeat(3, 1fr); } }
-
-@media screen and (max-width: 768px) {
-  main {
-    align-items: center;
-    text-align: center; }
-    main .lg-heading {
-      line-height: 1;
-      margin-bottom: 1rem; }
-    main#main-menu {
-      overflow: hidden; }
-  ul.menu-nav, div.menu-brand {
-    float: none;
-    width: 100%;
-    min-height: 0; }
-    ul.menu-nav.show, div.menu-brand.show {
-      transform: translate3d(0, 0, 0); }
-  .menu-nav {
-    height: 70vh;
-    transform: translate3d(-100%, 0, 0);
-    font-size: 20px; }
-  .menu-brand {
-    height: 30vh;
-    transform: translate3d(100%, 0, 0);
-    font-size: 20px; }
-  .portrait {
-    background-size: 50px;
-    width: 150px;
-    height: 150px; }
-  .main-about {
-    grid-template-areas: 'bioimage' 'bio' 'job1' 'job2' 'job3';
-    grid-template-columns: 1fr; }
-  .main-work {
-    grid-template-columns: repeat(2, 1fr); } }
-
-@media screen and (max-width: 500px) {
-  main#main-menu h1 {
-    margin-top: 10vh; }
-  .main-work {
-    grid-template-columns: 1fr; } }

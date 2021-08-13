@@ -20,7 +20,8 @@ body {
     height: 100%;
     margin: 0;
     line-height: 1.5;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: 'Varela' sans-serif;
+    
 }
 
 h1, h2, h3 {
@@ -53,6 +54,26 @@ header {
 .text-secondary {
     color: $secondary-color;
 }
+
+.know-btn {
+    display: inline-block;
+    background: #fff;
+    margin-bottom: 10px;
+    color: #000;
+    padding: 5px 10px;
+    border-radius: 5%;
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: 300;
+
+    &:hover {
+        background: $secondary-color;
+        color: #fff;
+            @include easeOut()
+    }
+}
+
+
 
 main {
     padding: 4rem;
@@ -231,5 +252,3 @@ main {
 
 
 
-
-@import 'mobile';
